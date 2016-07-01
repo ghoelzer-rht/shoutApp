@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cassandra = require('cassandra-driver');
 
-var client = new cassandra.Client({hosts: ['172.30.107.103:9042'], keyspace: 'test', username: 'cassandra', password: 'cassandra'});
+var client = new cassandra.Client({contactPoints : ['172.30.107.103'], keyspace: 'test', username: 'cassandra', password: 'cassandra'});
 
 client.execute('SELECT * FROM test_table', [],
 
