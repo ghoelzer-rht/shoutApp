@@ -25,3 +25,7 @@ client.execute('SELECT * FROM test_table', [],
 
   }
 );
+
+var app = express();
+
+module.exports = app;
