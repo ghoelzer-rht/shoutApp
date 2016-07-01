@@ -31,12 +31,12 @@ client.connect(function(err, result){
 });
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
-var user = require('./routes/user');
-var adduser = require('./routes/adduser');
-var edituser = require('./routes/edituser');
-var shouts = require('./routes/shouts');
-var addshout = require('./routes/addshout');
+//var users = require('./routes/users');
+//var user = require('./routes/user');
+//var adduser = require('./routes/adduser');
+//var edituser = require('./routes/edituser');
+//var shouts = require('./routes/shouts');
+//var addshout = require('./routes/addshout');
 
 var app = express();
 
@@ -53,12 +53,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
-app.use('/user', user);
-app.use('/adduser', adduser);
-app.use('/edituser', edituser);
-app.use('/shouts', shouts);
-app.use('/addshout', addshout);
+//app.use('/users', users);
+//app.use('/user', user);
+//app.use('/adduser', adduser);
+//app.use('/edituser', edituser);
+//app.use('/shouts', shouts);
+//app.use('/addshout', addshout);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
